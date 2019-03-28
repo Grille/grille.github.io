@@ -10,19 +10,17 @@ body{
     /* border: 2px solid rgb(88, 88, 88); */
     padding: 10px;
   }
-js{
-    color: yellow
-}
-cs{
-    color: green
-}
-java{
-    color: brown
-}
+.js{color: rgb(255, 255, 45)}
+.cs{color: rgb(0, 189, 0)}
+.java{color: rgb(187, 110, 23)}
 a {
     color: lightgray;
     text-decoration-line: none;
 }
+i {
+    font-style: normal;
+}
+
 a:hover{
     text-decoration-line: underline;
 }
@@ -32,12 +30,9 @@ h1,h2,h3{
 h3{
     margin:0px;
 }
-h1{
-    text-align: center;
-}
 table{
     text-align: center;
 }
 td{
-    width: 500px;
+    width: 400px;
 }

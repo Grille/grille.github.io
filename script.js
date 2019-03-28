@@ -32,12 +32,12 @@ class projectTable{
         this.code = "";
         this.html = html;
     }
-    add(language,name,demo) {
+    add(lang,name,demo) {
         let link = "https://github.com/Grille98/"+name;
         this.code+=
         `
         <tr>
-        <td><a href=${link}>* ${name}/<${language}>${language}</${language}></a></td>
+        <td><a href=${link}>* ${name}/<i class=${lang}>${lang}</i></a></td>
         `
         if (demo != null)
             this.code +=`<td><a href=${demo}>(demo)</a></td>`;
