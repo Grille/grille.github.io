@@ -5,7 +5,7 @@ function main(){
     games.add("js","Tank-Game")
     games.add("cs","CityGame")
     games.add("js","AntGame")
-    games.add("java","Risk")
+    games.add("java","NodeEngine","Risk")
 
     let programs = new projectTable(html_projectsPro);
     programs.add("cs","2D-isometricRenderer")
@@ -21,6 +21,7 @@ function main(){
     experiments.add("js","NVK-Mandelbrot")
     experiments.add("js","RetroLine3D")
     experiments.add("js","ColorPicker")
+    experiments.add("ts","MonLander")
 
     games.flush();
     programs.flush();
@@ -32,15 +33,15 @@ class projectTable{
         this.code = "";
         this.html = html;
     }
-    add(lang,name,demo) {
-        let link = "https://github.com/Grille98/"+name;
+    add(lang,repo,name = repo) {
+        let link = "https://github.com/Grille98/"+repo;
         this.code+=
         `
         <tr>
         <td><a href=${link}>* ${name}/<i class=${lang}>${lang}</i></a></td>
         `
-        if (demo != null)
-            this.code +=`<td><a href=${demo}>(demo)</a></td>`;
+        //if (demo != null)
+        //    this.code +=`<td><a href=${demo}>(demo)</a></td>`;
         this.code+=`</tr>`;
     }
     flush(){

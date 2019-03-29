@@ -7,22 +7,25 @@ body{
 .center {
     margin: auto;
     width: calc(400px);
-    /* border: 2px solid rgb(88, 88, 88); */
     padding: 10px;
-  }
+}
 .js{color: rgb(255, 255, 45)}
 .cs{color: rgb(0, 189, 0)}
 .java{color: rgb(187, 110, 23)}
+.c{color: rgb(102, 102, 102)}
+.cpp{color: rgb(199, 53, 65)}
+.ts{color: rgb(109, 94, 241)}
+.vb{color: rgb(160, 45, 226)}
+.html{color: rgb(224, 56, 5)}
 a {
     color: lightgray;
     text-decoration-line: none;
 }
-i {
-    font-style: normal;
-}
-
 a:hover{
     text-decoration-line: underline;
+}
+i {
+    font-style: normal;
 }
 h1,h2,h3{
     font-weight:normal;
