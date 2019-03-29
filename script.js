@@ -21,7 +21,6 @@ function main(){
     experiments.add("js","NVK-Mandelbrot")
     experiments.add("js","RetroLine3D")
     experiments.add("js","ColorPicker")
-    experiments.add("ts","MonLander")
 
     games.flush();
     programs.flush();
