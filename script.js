@@ -33,7 +33,7 @@ class projectTable{
         this.html = html;
     }
     addGH(tags,repo,name = repo) {
-        let link = "https://github.com/Grille98/"+repo;
+        let link = "https://github.com/Grille/"+repo;
         this.add(tags,link,name);
     }
     add(tags,link,name = link) {
