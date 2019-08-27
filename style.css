@@ -15,7 +15,7 @@ x-lang {
 }
 .center {
   margin: auto;
-  width: calc(512px);
+  width: calc(550px);
   padding: 10px;
 }
 
@@ -26,7 +26,6 @@ x-lang {
 .cpp{color: rgb(248, 91, 151)}
 .ts{color: rgb(109, 94, 241)}
 .vb,.vba{color: rgb(160, 45, 226)}
-
 .html{color: rgb(224, 56, 5)}
 .opengl,.webgl,.vulkan{color: rgb(199, 53, 65)}
 
@@ -57,5 +56,5 @@ table{
   text-align: center;
 }
 td{
-  width: 512px;
+  width: 550px;
 }

@@ -5,7 +5,7 @@ function main() {
 
   table = new ProjectTable("Game related:");
   table.addGH("JS, WebGL", "Tank-Game", "Top down multiplayer game with tanks");
-  table.addGH("C#, OpenGL", "SimCity inspired game");
+  table.addGH("C#, OpenGL", "CityGame", "SimCity inspired game");
   table.addGH("JS, WebGL", "AntGame", "Isometric RTS Ant Game (engine only)");
   table.addGH("Java", "NodeEngine", "Risk like game with javafx");
 
@@ -13,9 +13,11 @@ function main() {
   table.addGH("C#", "2D-isometricRenderer", "Generate isometric graphics from heightmaps");
 
   table = new ProjectTable("Simulation related:");
-  table.addGH("C#", "StarSim", "2D gravitation simulation");
+  //table.addGH("JS,  Vulkan", "Starsim-3D","N-body simulation with Vulkan");
+  table.addGH("C#", "StarSim", "2D n-body simulation on CPU");
 
-  table = new ProjectTable("OpenGl/WebGL related:");
+  table = new ProjectTable("GPU/Graphics related:");
+  table.addGH("JS,  Vulkan", "SimpleNVK","GPU library with simplified Vulkan functionality");
   table.addGH("JS, WebGL", "Webgl2D", "Simple 2d draw library for WebGL");
   table.addGH("C#, OpenGL", "CSGL2D", "2d library for OpenGL/OpenTK and C#");
 
@@ -23,10 +25,10 @@ function main() {
   table.addGH("C#", "CsStructParser", "Parser for config files used by CityGame");
 
   table = new ProjectTable("Experiments:");
-  table.addGH("JS, Vulkan", "NVK-Mandelbrot","Learning project for Vulkan");
+  //table.addGH("JS, Vulkan", "NVK-Mandelbrot","Realtime mandelbrot renderer in Vulkan");
   table.addGH("JS", "RetroLine3D", "Renderer for 3d wireframe models on canvas 2d");
 
-  table = new ProjectTable("Web:");
+  table = new ProjectTable("Web related:");
   table.addGH("JS", "ColorPicker", "Window for color picking");
 
   table = new ProjectTable("Other:");
@@ -49,7 +51,7 @@ class ProjectTable {
     this.code += `<tr><td><a href=${link}>&#9702 ${name} `;
     for (let i = 0; i < array.length; i++) {
       let lname = array[i].trim();
-      let lclass = lname.replace(/[#]/g, "s").replace(/[+]/g, "p").toLowerCase();
+      let lclass = lname.replace(/[#]/g, "s").replace(/[+]/g, "p").replace(/[.]/g, "_").toLowerCase();
       this.code += `<x-lang class=${lclass}>${lname}</x-lang>`;
     }
     this.code += `</a></td>`;
