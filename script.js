@@ -8,32 +8,32 @@ function main() {
   table.addGH("JS, WebGL", "Tank-Game", "Top down multiplayer game with tanks");
   table.addGH("C#, OpenGL", "CityGame", "SimCity inspired game");
   table.addGH("JS, WebGL", "AntGame", "Isometric RTS Ant Game (engine only)");
-  table.addGH("Java", "NodeEngine", "Risk like game with javafx");
+  table.addGH("Java", "NodeEngine", "Risk like game with JavaFX");
 
   table = new ProjectTable("Editor related:");
   table.addGH("C#", "2D-isometricRenderer", "Generate isometric graphics from heightmaps");
 
   table = new ProjectTable("Simulation related:");
-  //table.addGH("JS,  Vulkan", "Starsim-3D","N-body simulation with Vulkan");
-  table.addGH("C#", "StarSim", "2D n-body simulation on CPU");
+  table.addGH("JS,  Vulkan", "Starsim3D","N-body simulation with Vulkan");
+  table.addGH("C#", "StarSim", "Older 2D N-body simulation on CPU");
 
   table = new ProjectTable("GPU/Graphics related:");
-  table.addGH("JS,  Vulkan", "SimpleNVK","GPU library with simplified Vulkan functionality");
-  table.addGH("JS, WebGL", "Webgl2D", "Simple 2d draw library for WebGL");
-  table.addGH("C#, OpenGL", "CSGL2D", "2d library for OpenGL/OpenTK and C#");
+  table.addGH("JS, Vulkan", "SimpleNVK","GPU library with simplified Vulkan functionality");
+  table.addGH("JS, WebGL", "Webgl2D", "Simple 2D drawing library for WebGL");
+  table.addGH("C#, OpenGL", "CSGL2D", "2D library for OpenGL/OpenTK and C#");
 
   table = new ProjectTable("Parser related:");
   table.addGH("C#", "CsStructParser", "Parser for config files used by CityGame");
 
   table = new ProjectTable("Experiments:");
   //table.addGH("JS, Vulkan", "NVK-Mandelbrot","Realtime mandelbrot renderer in Vulkan");
-  table.addGH("JS", "RetroLine3D", "Renderer for 3d wireframe models on canvas 2d");
+  table.addGH("JS", "RetroLine3D", "Renderer for 3D wireframe models on canvas 2D");
 
   table = new ProjectTable("Web related:");
   table.addGH("JS", "ColorPicker", "Window for color picking");
 
   table = new ProjectTable("Other:");
-  table.addGH("C#", "ByteStream", "Library to write and read binary data");
+  table.addGH("C#", "BinaryView", "Library to write and read binary data");
 
   flush();
 }
