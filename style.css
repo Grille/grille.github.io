@@ -18,6 +18,9 @@ x-lang {
   width: calc(550px);
   padding: 10px;
 }
+::selection {
+  background: #333333; /* WebKit/Blink Browsers */
+}
 
 .js{color: rgb(235, 235, 99)}
 .cs{color: rgb(34, 187, 34)}
