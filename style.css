@@ -1,66 +1,143 @@
-body{
-  background-color: rgb(34, 34, 34);
-  color: lightgray;
-  font-family: 'consolas';
-  text-align: center;
-  visibility: hidden;
-  font-size: 14px; 
-}
-x-lang {
-  background-color: rgb(55, 55, 50);
-  padding: 2px;
-  padding-bottom: 1px;
-  font-size: 12px;
-  margin-right: 4px;
-}
-.center {
-  margin: auto;
-  width: calc(550px);
-  padding: 10px;
-}
-::selection {
-  background: #333333; /* WebKit/Blink Browsers */
+header {
+    padding: 1px;
 }
 
-.js{color: rgb(235, 235, 99)}
-.cs{color: rgb(34, 187, 34)}
-.java{color: rgb(187, 110, 23)}
-.c{color: rgb(116, 116, 116)}
-.cpp{color: rgb(248, 91, 151)}
-.ts{color: rgb(109, 94, 241)}
-.py{color: rgb(94, 121, 241)}
-.vb,.vba{color: rgb(160, 45, 226)}
-.html{color: rgb(224, 56, 5)}
-.opengl,.webgl,.vulkan,.directx,.webgpu{color: rgb(199, 53, 65)}
-.monogame,.unity{color: rgb(185, 151, 204)}
-.winform,.javafx{color: rgb(53, 199, 143)}
+body {
+    background-color: rgb(34, 34, 34);
+    color: lightgray;
+    font-family: 'consolas';
+    text-align: center;
+    font-size: 14px;
+}
+
+x-lang {
+    background-color: rgb(55, 55, 50);
+    padding: 2px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.center {
+    margin: auto;
+    width: calc(550px);
+    padding: 10px;
+}
+
+::selection {
+    background: #2b4e2d;
+    /* WebKit/Blink Browsers */
+}
+
+.js {
+    color: rgb(235, 235, 99)
+}
+
+.cs {
+    color: rgb(34, 187, 34)
+}
+
+.java {
+    color: rgb(187, 110, 23)
+}
+
+.c {
+    color: rgb(116, 116, 116)
+}
+
+.cpp {
+    color: rgb(248, 91, 151)
+}
+
+.ts {
+    color: rgb(109, 94, 241)
+}
+
+.py {
+    color: rgb(94, 121, 241)
+}
+
+.vb,
+.vba {
+    color: rgb(160, 45, 226)
+}
+
+.html {
+    color: rgb(224, 56, 5)
+}
+
+.opengl,
+.webgl,
+.vulkan,
+.directx,
+.webgpu {
+    color: rgb(199, 53, 65)
+}
+
+.blender,
+.godot,
+.monogame,
+.unity {
+    color: rgb(185, 151, 204)
+}
+
+.winform,
+.javafx {
+    color: rgb(53, 199, 143)
+}
 
 a {
-  color: rgb(224, 224, 224);
-  text-decoration-line: none;
-  font-size: 14px;
+    color: rgb(224, 224, 224);
+    text-decoration-line: none;
+    font-size: 14px ;
 }
-a:hover{
-  text-decoration-line: underline;
+nav a {
+    color: rgb(213, 224, 217);
+    background-color: rgb(34, 43, 36);
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
+
+a:hover {
+    text-decoration-line: underline;
+}
+
 i {
-  font-style: normal;
+    font-style: normal;
 }
-h1,h2,h3{
-  font-weight:normal;
-  color: gray;
-  font-size: 24px;
+
+h1,
+h2,
+h3 {
+    background-color: rgb(34, 43, 36);
+    font-weight: normal;
+    color: gray;
+    font-size: 24px;
 }
+
+img {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin-top: 8px;
+}
+
 h2 {
-  font-size: 20px;
+    font-size: 20px;
 }
-h3{
-  font-size: 16px;
-  margin:0px;
+
+h3 {
+    font-size: 16px;
+    margin: 0px;
 }
-table{
-  text-align: center;
+
+table {
+    text-align: center;
 }
-td{
-  width: 550px;
+
+td {
+    width: 550px;
 }

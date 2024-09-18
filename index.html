@@ -1,31 +1,93 @@
 <html>
 
 <head>
-  <title>Grille / Paul Hirch</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Grille / Paul Hirch</title>
+    <meta charset=utf-8>
+    <link rel=stylesheet href=/style.css>
+    <link rel=shortcut icon href=favicon.ico type=image/x-icon>
 </head>
 
-<body id="html_body">
-  <div class="center">
-    <h1>Grille</h1>
+<header>
+    <h1>Grille's Site</h1>
+    <nav>
+        <h2>Navigation</h2>
+        <a href="/index.html">Projects</a>
+        <a href="/synetic/index.html">Synetic Mods</a>
+    </nav>
+</header>
+
+<body>
     <p>
-      Hi</br></br>
-      I'm Paul Hirch (Grille) from Germany</br></br>
-      this is a list of my (mostly half finished...) Projects.</br>
-      Most of it is about games and graphic programming.</br>
+        Hello, welcome to my little... Website? Portfolio?<br>
+        Here you can find a selection of my (unfinished) projects.
     </p>
     <h2>Projects</h2>
-    <div id="html_projects">
+    <div class=center>
+
+        <x-projects>
+            <x-pt>Games</x-pt>
+            <x-pl>GH:Tank-Game; Top down multiplayer game with tanks; JS, WebGL;</x-pl>
+            <x-pl>GH:CityGame; SimCity inspired game; C#, WinForm, OpenGL;</x-pl>
+            <x-pl>GH:AntGame; Isometric RTS Ant Game (engine only); JS, WebGL;</x-pl>
+            <x-pl>GH:NodeEngine; Risk like game with JavaFX; Java, JavaFX;</x-pl>
+        </x-projects>
+
+        <x-projects>
+            <x-pt>Modding Tools</x-pt>
+            <x-pl>GH:SyneticConverter; Synetic Converter; C#, WinForm, OpenGL;</x-pl>
+            <x-pl>GH:BeamNG_LevelTemplateCreator; BeamNG.drive; C#, WinForm;</x-pl>
+        </x-projects>
+
+        <x-projects>
+            <x-pt>Simulation</x-pt>
+            <x-pl>GH:CircuitToy; CircuitToy; C#, WinForm;</x-pl>
+            <x-pl>GH:Starsim3D; N-body simulation with Node-Vulkan; JS, Vulkan;</x-pl>
+            <x-pl>GH:StarSim; 2D N-body simulation; C#, WinForm;</x-pl>
+        </x-projects>
+
+        <x-projects>
+            <x-pt>GPU/Graphics</x-pt>
+            <x-pl>GH:2D-isometricRenderer; Isometric renderer for heightmaps; C#, WinForm;</x-pl>
+            <x-pl>GH:SimpleNVK; Graphic API similar to WebGPU using Node-Vulkan; JS, Vulkan;</x-pl>
+            <x-pl>GH:Webgl2D; 2D drawing library for JS using WebGL; JS, WebGL;</x-pl>
+            <x-pl>GH:RetroLine3D; Renderer for 3D wireframe models on canvas 2D; TS;</x-pl>
+        </x-projects>
+
+        <x-projects>
+            <x-pt>Parsing</x-pt>
+            <x-pl>GH:CsStructParser; Parser for config files, used by CityGame; C#;</x-pl>
+            <x-pl>GH:ProLernTranspiler; ProLern Transpiler & Editor; C#, WinForm;</x-pl>
+        </x-projects>
+
+        <x-projects>
+            <x-pt>Utils</x-pt>
+            <x-pl>GH:BinaryView; Library to write and read binary data; C#;</x-pl>
+        </x-projects>
+
+        <x-projects>
+            <x-pt>Web</x-pt>
+            <x-pl>GH:ColorPicker; Window for color picking; JS;</x-pl>
+            <x-pl>GH:grille.github.io; This Site; JS;</x-pl>
+        </x-projects>
+
+        <x-projects>
+            <x-pt>Modding</x-pt>
+            <x-pl>https://www.beamng.com/threads/mbwr-alps-remake-conversion-v0-2.85833/; (BeamNG) MBWR_Alps Remake; Blender;</x-pl>
+        </x-projects>
+
     </div>
+</body>
+
+<footer>
     <h2>Links</h2>
     <a href="https://github.com/Grille">GitHub</a>,
-    <a href="https://www.linkedin.com/in/paul-hirch-857baa181/">LinkedIn</a>,
-    <a href="mailto:paul-jasper@hotmail.de">Email</a>
-  </div>
-</body>
+    <a href="https://www.linkedin.com/in/paul-hirch-857baa181">LinkedIn</a>,
+    <a href="https://www.nuget.org/profiles/Grille">NuGet</a>,
+    <a href="https://www.youtube.com/@grille2893">YouTube</a>
+    <h2>Contact</h2>
+    <a href="mailto:paul-jasper@hotmail.de">Email (paul-jasper@hotmail.de)</a>
+</footer>
 
 </html>
 
-<script type="text/javascript" src="script.js"></script>
+<script type=text/javascript src=/script.js></script>
