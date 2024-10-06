@@ -10,7 +10,14 @@ function main() {
 
     for (let i = 0; i< elements.length;i++){
         let element = elements[i];
-        let title = element.getElementsByTagName("x-pt")[0].innerText.trim();
+
+        let titleList = element.getElementsByTagName("x-pt");
+        if (titleList.length == 0){
+            var title = null
+        }
+        else {
+            var title = titleList[0].innerText.trim()
+        }
         var table = new ProjectTable(title)
         let links = element.getElementsByTagName("x-pl")
         for (let j = 0; j < links.length;j++){
@@ -37,6 +44,9 @@ class ProjectTable {
         this.code += `<tr><td><a href=${link}>&#9702 ${name} `;
         for (let i = 0; i < array.length; i++) {
             let lname = array[i].trim();
+            if (lname.length == 0){
+                continue;
+            }
             let lclass = lname.replace(/[#]/g, "s").replace(/[+]/g, "p").replace(/[.]/g, "_").toLowerCase();
             this.code += `<x-lang class=${lclass}>${lname}</x-lang>`;
         }
@@ -45,7 +55,10 @@ class ProjectTable {
     }
     build() {
         let html = "";
-        html += `<h3>${this.title}</h3><table>`;
+        if (this.title != null) {
+            html += `<h3>${this.title}</h3>`;
+        }
+        html += `<table>`;
         html += this.code;
         html += `</table>`;
         html += `</br>`;

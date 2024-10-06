@@ -66,6 +66,17 @@ x-lang {
     color: rgb(224, 56, 5)
 }
 
+.sceneries {
+    color: rgb(34, 187, 34)
+}
+.cars {
+    color: rgb(94, 121, 241)
+}
+.misc {
+    color: rgb(116, 116, 116)
+}
+
+
 .opengl,
 .webgl,
 .vulkan,
